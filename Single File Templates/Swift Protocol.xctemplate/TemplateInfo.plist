@@ -5,11 +5,11 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>A Swift class file.</string>
+	<string>A Swift protocol file.</string>
 	<key>Summary</key>
-	<string>A Swift class file</string>
+	<string>A Swift protocol file</string>
 	<key>SortOrder</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>Platforms</key>
 	<array>
 		<string>com.apple.platform.iphoneos</string>
@@ -35,11 +35,11 @@
 		</dict>
 		<dict>
 			<key>Identifier</key>
-			<string>IsSubclass</string>
+			<string>AddImp</string>
 			<key>Name</key>
-			<string>Is subclass</string>
+			<string>Add implementation</string>
 			<key>Description</key>
-			<string>Defines if new class Is a subclass of other class.</string>
+			<string>Add implementaiton of the protocol.</string>
 			<key>Type</key>
 			<string>checkbox</string>
 			<key>Default</key>
@@ -49,20 +49,46 @@
 		</dict>
 		<dict>
 			<key>Identifier</key>
-			<string>superclass</string>
+			<string>impType</string>
 			<key>Name</key>
-			<string>Subclass of:</string>
+			<string>Implementation type</string>
 			<key>Description</key>
-			<string>The name of the superclass</string>
+			<string>Type of an implementation.</string>
 			<key>Type</key>
-			<string>text</string>
+			<string>popup</string>
 			<key>Default</key>
-			<string>NSObject</string>
+			<string>Class</string>
+			<key>Values</key>
+			<array>
+				<string>Class</string>
+				<string>Struct</string>
+			</array>
 			<key>NotPersisted</key>
 			<true/>
 			<key>RequiredOptions</key>
 			<dict>
-				<key>IsSubclass</key>
+				<key>AddImp</key>
+				<array>
+					<string>true</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>impSuffix</string>
+			<key>Name</key>
+			<string>Implementation suffix:</string>
+			<key>Description</key>
+			<string>Suffix of an implementation name.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Imp</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>AddImp</key>
 				<array>
 					<string>true</string>
 				</array>

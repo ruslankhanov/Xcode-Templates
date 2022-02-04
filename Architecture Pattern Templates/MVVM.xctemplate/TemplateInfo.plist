@@ -30,6 +30,8 @@
 			<string>text</string>
 			<key>Default</key>
 			<string>MyModule</string>
+			<key>NotPersisted</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -44,6 +46,8 @@
 			<string>popup</string>
 			<key>Default</key>
 			<string>Delegate</string>
+			<key>NotPersisted</key>
+			<true/>
 			<key>Values</key>
 			<array>
 				<string>Delegate</string>
