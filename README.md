@@ -14,3 +14,4 @@
 ### Single File Templates
 
 - Swift class
+- Swift protocol
