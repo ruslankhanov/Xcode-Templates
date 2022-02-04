@@ -23,13 +23,13 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>Class name:</string>
+			<string>Protocol name:</string>
 			<key>Description</key>
-			<string>The name of the class</string>
+			<string>The name of the protocol</string>
 			<key>Type</key>
 			<string>text</string>
 			<key>Default</key>
-			<string>MyClass</string>
+			<string>MyProtocolable</string>
 			<key>NotPersisted</key>
 			<true/>
 		</dict>
@@ -51,7 +51,7 @@
 			<key>Identifier</key>
 			<string>impType</string>
 			<key>Name</key>
-			<string>Implementation type</string>
+			<string>Implementation type:</string>
 			<key>Description</key>
 			<string>Type of an implementation.</string>
 			<key>Type</key>
@@ -95,8 +95,6 @@
 			</dict>
 		</dict>
 	</array>
-	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.swift</string>
 	<key>SupportsSwiftPackage</key>
 	<true/>
 </dict>
