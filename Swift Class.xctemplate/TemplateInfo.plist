@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>A Swift class file.</string>
+	<key>Summary</key>
+	<string>A Swift class file</string>
+	<key>SortOrder</key>
+	<integer>0</integer>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+		<string>com.apple.platform.macosx</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Class name:</string>
+			<key>Description</key>
+			<string>The name of the class</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>MyClass</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>IsSubclass</string>
+			<key>Name</key>
+			<string>Is subclass</string>
+			<key>Description</key>
+			<string>Defines if new class Is a subclass of other class.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>superclass</string>
+			<key>Name</key>
+			<string>Subclass of:</string>
+			<key>Description</key>
+			<string>The name of the superclass</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>NSObject</string>
+			<key>RequiredOptions</key>
+			<dict>
+				<key>IsSubclass</key>
+				<array>
+					<string>true</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>SupportsSwiftPackage</key>
+	<true/>
+</dict>
+</plist>
